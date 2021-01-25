@@ -43,6 +43,7 @@ export class UsersController {
         return `avatars/${file.filename}`;
     }
 
+    @UseGuards(JWTAuthGuard)
     @Get('avatar/:image')
     getImage(@Param('image') image: string, @Res() res) {
         res.setHeader('Content-Type', 'image/jpeg');

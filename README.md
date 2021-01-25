@@ -1,3 +1,17 @@
+for registration endpoint(POST /auth/signup) needs: firstName, lastName, email, nickName, password,
+for logIn endpoint(POST /auth/login) needs: username(emqil) and password;
+other endpoints: 
+for uploading avatar: POST /users/avatar - needs image in format .jpeg or .png and bearer token;
+for getting avatar: GET /users/:image - needs avatars file name in query string;
+for getting statistics: GET /users/statistics/:email;
+for getting favorites list: GET /users/favorites;
+for updating user: PUT /users/:id: need id;
+
+
+
+
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
